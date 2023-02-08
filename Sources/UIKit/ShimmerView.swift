@@ -57,6 +57,7 @@ open class ShimmerView: UIView, ShimmerSyncTarget {
     }
 
     public func apply(style: ShimmerViewStyle) {
+        self.style = style
         coreView.update(style: style)
     }
 
