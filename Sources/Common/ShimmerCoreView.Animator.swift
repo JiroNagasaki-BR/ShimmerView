@@ -136,7 +136,7 @@ internal extension ShimmerCoreView {
             let animation = CABasicAnimation(keyPath: "startPoint")
             animation.fromValue = startPointAnimationFromValue
             animation.toValue = startPointAnimationToValue
-            animation.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
+            animation.timingFunction = style.timingFunction
 
             return animation
         }
@@ -145,7 +145,7 @@ internal extension ShimmerCoreView {
             let animation = CABasicAnimation(keyPath: "endPoint")
             animation.fromValue = endPointAnimationFromValue
             animation.toValue = endPointAnimationToValue
-            animation.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
+            animation.timingFunction = style.timingFunction
 
             return animation
         }

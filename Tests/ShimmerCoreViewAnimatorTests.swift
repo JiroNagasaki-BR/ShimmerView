@@ -10,7 +10,8 @@ class ShimmerCoreViewAnimatorTests: XCTestCase {
             duration: 10,
             interval: 10,
             effectSpan: .points(100),
-            effectAngle: 0
+            effectAngle: 0,
+            timingFunction: .init(name: .easeInEaseOut)
         )
         let baseBounds = CGRect(x: 0, y: 0, width: 300, height: 300)
 
@@ -66,7 +67,8 @@ class ShimmerCoreViewAnimatorTests: XCTestCase {
             duration: 10,
             interval: 10,
             effectSpan: .points(100),
-            effectAngle: 0
+            effectAngle: 0,
+            timingFunction: .init(name: .easeInEaseOut)
         )
         let baseBounds = CGRect(x: 0, y: 0, width: 300, height: 300)
         let animator = ShimmerCoreView.Animator(
@@ -93,7 +95,8 @@ class ShimmerCoreViewAnimatorTests: XCTestCase {
             duration: 10,
             interval: 10,
             effectSpan: .points(100),
-            effectAngle: 0
+            effectAngle: 0,
+            timingFunction: .init(name: .easeInEaseOut)
         )
         let baseBounds = CGRect(x: 0, y: 0, width: 300, height: 300)
         let animator = ShimmerCoreView.Animator(

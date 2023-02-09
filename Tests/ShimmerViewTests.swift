@@ -94,7 +94,8 @@ class ShimmerViewTests: XCTestCase {
             duration: 10,
             interval: 10,
             effectSpan: .points(100),
-            effectAngle: 0
+            effectAngle: 0,
+            timingFunction: .init(name: .easeInEaseOut)
         )
         view.apply(style: newStyle)
         XCTAssertEqual(view.coreView.style, newStyle)

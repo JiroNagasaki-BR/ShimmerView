@@ -57,7 +57,8 @@ class ShimmerCoreViewTests: XCTestCase {
             duration: 10,
             interval: 10,
             effectSpan: .points(100),
-            effectAngle: 0
+            effectAngle: 0,
+            timingFunction: .init(name: .easeInEaseOut)
         )
 
         view.update(style: newStyle)

@@ -41,7 +41,9 @@ let style = ShimmerViewStyle(
     duration: 1.2,
     interval: 0.4,
     effectSpan: .points(120),
-    effectAngle: 0 * CGFloat.pi)
+    effectAngle: 0 * CGFloat.pi,
+    timingFunction: .init(name: .easeInEaseOut),
+    speed: 1.0)
 ```
 
 ## Usage on SwiftUI (iOS 14.0+)
